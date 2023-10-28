@@ -1,0 +1,11 @@
+const company = ("Компанія A");
+let country = confirm("ти з України?");
+let years = confirm("тобі більше 21?");
+let illumination = confirm("ти маєш вищу освіту?");
+let auto = confirm("в тебе є друге авто?");
+let children = confirm("в тебе є діти?");
+let accident = confirm("чи були в тебе ДТП?");
+const letterA = confirm("чи є у твоему імені літера 'A'?");
+const conditions = country && (!accident || (years && illumination && children) || letterA);
+const decision = conditions ? "true" : "false";
+alert("Статус рішення-" + decision+"." +"  "+"З повагою, страхова"+" " + company);
