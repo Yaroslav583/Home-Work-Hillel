@@ -1,0 +1,101 @@
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+.container {
+    width: 786px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 786px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.table th {
+    padding: 20px;
+    border-top: 1px solid #888;
+    border-bottom: 3px double #888;
+}
+
+.table th:nth-child(1) {
+    border-left: 1px solid #888;
+}
+
+.table th:nth-child(10) {
+    border-right: 1px solid #888;
+}
+
+.table th:nth-child(5) {
+    border-right: 1px solid #888;
+}
+
+.table th:active,
+.table td:active {
+    color: red;
+}
+
+.table th:hover {
+    position: relative;
+}
+
+.table th:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+}
+
+.table td:hover {
+    position: relative;
+}
+
+.table td:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+}
+
+.power {
+    position: relative;
+}
+
+.power:after {
+
+    content: 'TOP';
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    bottom: 20px;
+    right: 50px;
+    position: fixed;
+    background-color: red;
+    color: snow;
+    text-align: center;
+    line-height: 50px;
+}
+
