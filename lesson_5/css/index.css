@@ -1,0 +1,732 @@
+body {
+    font-family: Rubik, serif;
+}
+
+.first-scr {
+    position: revert;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #0B132A;
+}
+
+header {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background: url("./../img/logo.svg") no-repeat center;
+    width: 149px;
+    height: 37px;
+}
+
+.btn-light {
+    margin-left: 30px;
+    text-align: center;
+    display: inline-block;
+    line-height: 45px;
+    color: #F53855;
+    min-width: 150px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+}
+
+.btn-light:hover {
+    color: #fff;
+    background: #F53838;
+}
+
+.sub-naw,
+.sub-naw li,
+.sub-naw a {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    color: #4F5665;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 129px;
+}
+
+.title {
+    font-size: 50px;
+
+}
+
+.title-box span {
+    font-weight: 700;
+}
+
+.provide {
+
+    margin-top: 20px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.title-box a {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background-color: #F53838;
+    border: 1px solid #F53838;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 250px;
+    line-height: 60px;
+}
+
+.get:hover {
+    color: #F53838;
+    background: #fff;
+}
+
+.title-box {
+    float: left;
+    background: url("./../img/first-screen-banner.png") no-repeat right;
+    width: 1440px;
+    height: 330px;
+
+}
+
+.user {
+    float: left;
+    background: url("./../img/user.png") no-repeat center;
+    width: 55px;
+    height: 55px;
+    margin-left: 125px;
+    margin-right: 20px;
+}
+
+.uls {
+    display: flex;
+    align-items: center;
+    margin-top: 600px;
+
+
+}
+
+
+.us,
+.loc,
+.ser {
+    color: #4F5665;
+}
+
+.sub-user,
+.sub-location,
+.sub-servers {
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.text-container,
+.text-location,
+.text-servers {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.text-container:before,
+.text-location:before {
+
+    content: "";
+    position: absolute;
+    top: -37px;
+    right: -134px;
+    width: 2px;
+    height: 125px;
+    background-color: #EEEFF2;
+
+
+}
+
+
+.text-servers:last-child {
+    border: none;
+}
+
+.location {
+    float: left;
+    background: url("./../img/location.png") no-repeat center;
+    width: 55px;
+    height: 55px;
+    margin-left: 348px;
+    margin-right: 20px;
+
+
+}
+
+.servers {
+    float: left;
+    background: url("./../img/Server.png") no-repeat center;
+    width: 55px;
+    height: 55px;
+    margin-left: 384px;
+    margin-right: 20px;
+}
+
+.sec-banner {
+    float: left;
+    background: url("./../img/Illustration 2.png") no-repeat center;
+    width: 700px;
+    height: 600px;
+}
+
+.second-scr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.text-second {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.first-text {
+    width: 383px;
+    font-size: 35px;
+    color: #0B132A;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.you {
+    font-weight: 400;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.mark-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.mark1,
+.mark2,
+.mark3,
+.mark4 {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    background: url("./../img/bx_bxs-check-circle.svg");
+    width: 24px;
+    height: 24px;
+    margin-top: 20px;
+}
+
+.mark-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-mark {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.mark1 {
+    position: revert;
+}
+
+.mark1:before {
+    content: "Powerfull online protection.";
+    position: absolute;
+    top: 1096px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 35px;
+    color: #4F5665;
+
+}
+
+.mark2 {
+    position: revert;
+}
+
+.mark2:before {
+    content: "Internet without borders.";
+    position: absolute;
+    top: 1140px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 35px;
+    color: #4F5665;
+}
+
+.mark3 {
+    position: revert;
+}
+
+.mark3:before {
+    content: "Supercharged VPN";
+    position: absolute;
+    top: 1184px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 35px;
+    color: #4F5665;
+}
+
+.mark4 {
+    position: revert;
+}
+
+.mark4:before {
+    content: "No specific time limits.";
+    position: absolute;
+    top: 1228px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 35px;
+    color: #4F5665;
+}
+
+h1 {
+    text-align: center;
+    color: #0B132A;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.container-box {
+    position: revert;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    margin-bottom: 90px;
+    background: #F8F8F8;
+}
+.sub-packege{
+   text-align: center;
+}
+.package {
+
+    display: inline-block;
+
+    margin-bottom: 60px;
+    text-align: center;
+    width: 555px;
+    color: #4F5665;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.fre {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+
+.fre-baner1 {
+    background: url("./../img/Free.png") no-repeat center 80px;
+    width: 330px;
+    height: 760px;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+
+}
+
+.fre-baner2 {
+    background: url("./../img/Standard.png") no-repeat center 80px;
+    width: 330px;
+    height: 760px;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+
+}
+
+.fre-baner3 {
+    background: url("./../img/Premium.png") no-repeat center 80px;
+    width: 330px;
+    height: 760px;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+}
+
+
+.fre-pla {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #0B132A;
+    margin-top: 275px;
+
+}
+
+.sub-baner1,
+.sub-baner2,
+.sub-baner3,
+.sub-baner4,
+.sub-baner5,
+.sub-baner6,
+.sub-baner7,
+.sub-baner8,
+.sub-baner9,
+.sub-baner10 {
+    background: url("./../img/bx_bxs-check-circle.svg") no-repeat center;
+    width: 24px;
+    height: 33px;
+    margin: 16px 70px;
+
+}
+
+.sub-baner1 {
+    position: revert;
+}
+
+.sub-baner1:before {
+    content: "Unlimited Bandwitch";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.sub-baner2 {
+    position: revert;
+}
+
+.sub-baner2:before {
+    content: "Encrypted Connection";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+}
+
+.sub-baner3 {
+    position: revert;
+}
+
+.sub-baner3:before {
+    content: "No Traffic Logs";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+}
+
+.sub-baner4 {
+    position: revert;
+}
+
+.sub-baner4:before {
+    content: "Works on All Devices";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.free {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #0B132A;
+    margin-top: 130px;
+}
+
+.fre a {
+    display: inline-block;
+    text-align: center;
+    color: #F53838;
+    background-color: #fff;
+    border: 2px solid #F53838;
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 175px;
+    line-height: 45px;
+    margin-left: 76px;
+}
+
+.free2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #0B132A;
+    margin-top: 85px;
+}
+
+.free2 span,
+.free3 span {
+    font-weight: 400;
+    color: #4F5665;
+}
+
+.sub-baner5 {
+    position: revert;
+}
+
+.sub-baner5:before {
+    content: "Unlimited Bandwitch";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.sub-baner6 {
+    position: revert;
+}
+
+.sub-baner6:before {
+    content: "Encrypted Connection";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.sub-baner7 {
+    position: revert;
+}
+
+.sub-baner7:before {
+    content: "Yes Traffic Logs";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.sub-baner8 {
+    position: revert;
+}
+
+.sub-baner8:before {
+    content: "Works on All Devices";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.sub-baner9 {
+    position: revert;
+}
+
+.sub-baner9:before {
+    content: "Connect Anyware";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.sub-baner9 {
+    position: revert;
+}
+
+.sub-baner10:before {
+    content: "Get New Features";
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #4F5665;
+    margin-left: 40px;
+
+}
+
+.free3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #0B132A;
+    margin-top: 38px;
+}
+
+.fre a:hover {
+    color: #fff;
+    background: #F53838;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+
+.special {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #0B132A;
+
+}
+
+.fun {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.now {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #F53838;
+    border-radius: 10px;
+    background-color: #F53838;
+    color: #fff;
+    width: 250px;
+    height: 60px;
+    line-height: 55px;
+}
+.now:hover{
+    background-color: #fff;
+    color: #F53838;
+}
+
+footer {
+    background-color: #F8F8F8;
+
+}
+
+.final {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    padding-right: 150px;
+    padding-top: 66px;
+    padding-bottom: 100px;
+    line-height: 30px;
+    margin-left: 150px;
+    margin-top: 70px;
+}
+
+
+.text-final {
+    margin-top: 30px;
+    padding-left: 5px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.las {
+    font-weight: 400;
+    color: #AFB5C0;
+    margin-top: 20px;
+}
+
+.vpn {
+    font-weight: 500;
+    color: #4F5665;
+}
+
+.sub-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10px;
+    line-height: 35px;
+
+
+}
+
+.final p {
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 18px;
+    color: #0B132A;
+    margin-bottom: 20px;
+}
+
+.container-footer {
+    display: flex;
+
+}
+
+.sub-product a,
+.sub-engage a,
+.sub-earn a {
+    color: #4F5665;
+    padding-bottom: 10px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.sub-product {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-earn {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
