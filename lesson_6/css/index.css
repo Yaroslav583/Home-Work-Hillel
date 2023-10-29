@@ -1,0 +1,797 @@
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+.first-scr {
+
+    padding-top: 40px;
+    background: linear-gradient(251deg, #461096 -26.6%, #7F3CE0 114.33%);
+    overflow: hidden;
+    padding-bottom: 192px;
+    margin-bottom: 188px;
+}
+
+header {
+
+    margin-bottom: 78px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo span {
+
+    font-weight: 700;
+    line-height: 150%;
+    color: #42B4EE;
+    font-size: 30px;
+    margin-left: 43px;
+    margin-top: 94px;
+    font-style: italic;
+
+}
+
+.logo {
+    background: url("./../img/logo.svg") no-repeat center;
+    width: 44px;
+    height: 50px;
+    line-height: 150%;
+}
+
+
+.sub-naw,
+.sub-naw li,
+.sub-naw a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.hom {
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.btn-light {
+
+
+    border: 1px solid #42B4EE;
+    border-radius: 10px;
+    background: #42B4EE;
+    color: #FFF;
+    font-size: 16px;
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+
+}
+
+.btn-light:hover {
+    background-color: rgba(66, 180, 238, 0.8);
+}
+
+
+.paragraf {
+
+    color: #FFF;
+    margin-top: 150px;
+
+}
+
+.paragraf h1 {
+
+    width: 498px;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+
+.paragraf h2 {
+    width: 435px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.8;
+    margin-bottom: 38px;
+}
+
+.paragraf a {
+    border: 1px solid #42B4EE;
+    border-radius: 10px;
+    background: #42B4EE;
+    color: #FFF;
+    font-size: 20px;
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paragraf a:hover {
+    background-color: rgba(66, 180, 238, 0.8);
+}
+
+.relative {
+    position: relative;
+}
+
+.first-scr .picture {
+    top: 137px;
+    right: -143px;
+    background: url("./../img/picture1.png") no-repeat center;
+    width: 752px;
+    height: 562px;
+    background-size: contain;
+    position: absolute;
+
+}
+
+.help-list-box .container-text {
+    margin-left: 703px;
+    width: 508px;
+    display: inline-block;
+
+}
+
+.relative {
+    position: relative;
+}
+
+.help-list-box .sub-picture {
+    position: absolute;
+    background: url("./../img/picture2.png") no-repeat center;
+    margin-left: -147px;
+    width: 601px;
+    height: 471px;
+    background-size: contain;
+}
+
+.list-box {
+    /*щоб блок з текстом був зправа*/
+    text-align: left;
+    position: relative;
+}
+
+.list-box .title {
+    color: #051114;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.list-box .description {
+    width: 367px;
+    color: #051114;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.7;
+}
+
+.system {
+    margin-bottom: 55px;
+    width: 508px;
+    color: #051114;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+
+.help-list-box .list-box {
+    padding-left: 101px; /*звільнюємо просір для іконок, щоб текст подвинувся і був простір зліва*/
+    position: relative; /*щою абсолют у іконках працював саме від блока list-box*/
+
+}
+
+.help-list-box .list-item:before {
+    /*кожен блок, який складається з іконки, заголовку та дескріпшену має класс list-item
+   див. html. тому ці стилі будуть застосовуватись до кожного з цих блоків*/
+    content: ''; /*тут як і завжди, тк як бекграунд - контент пустий*/
+    position: absolute; /*це для абсолютного позиціонування*/
+    width: 24px; /*задаємо ширину*/
+    height: 22px; /*висоту*/
+    left: 25px;
+    margin-top: 10px;
+
+
+    /*далі вказуємо на скільки від лівого краю поминна відступати іконка. див. у фігмі. всі іконки мають однаковий
+       відступ, тому у нас для всіх іконок однакове значення*/
+
+}
+
+.list-item.orange-icon:before {
+
+    /*щоб задати унікальний бекграун у нас list-item елементи також мають класси, які вказують на те
+    яку іконку використовувати. також дивись хтмл. саме за цими класами ми відрізняємо куди яку іконку додавати як бекграунд*/
+    background: url("./../img/orange.svg") no-repeat center;
+}
+
+.list-item.green-icon:before {
+    background: url("./../img/green.svg") no-repeat center;
+}
+
+.list-item.blu-icon:before {
+    background: url("./../img/blu.svg") no-repeat center;
+}
+
+
+/* мой код рестарт*/
+
+
+.box-shadow h1 {
+
+    text-align: center;
+    width: 549px;
+    margin-top: 174px;
+    color: #051114;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 60px;
+    margin-left: 340px;
+}
+
+.tables {
+    margin-bottom: 143px;
+    display: inline-block;
+}
+
+.box-tables {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+
+
+}
+
+.tables1 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: url("./../img/tables1.png") no-repeat center 40px;
+    width: 263px;
+    height: 417px;
+    margin-right: 30px;
+    box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+
+}
+
+.tables2 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: url("./../img/tables2.png") no-repeat center 40px;
+    width: 262px;
+    height: 417px;
+    margin-right: 30px;
+    box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+}
+
+.tables3 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: url("./../img/tables3.png") no-repeat center 40px;
+    width: 262px;
+    height: 417px;
+    margin-right: 30px;
+    box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+}
+
+.tables4 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: url("./../img/tables4.png") no-repeat center 40px;
+    width: 262px;
+    height: 417px;
+    box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+}
+
+
+.tables1 h1,
+.tables2 h1,
+.tables3 h1,
+.tables4 h1 {
+    color: #051114;
+    text-align: center;
+    margin-top: 240px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 10px;
+
+}
+
+.tables1 h3,
+.tables2 h3,
+.tables3 h3,
+.tables4 h3 {
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.arrow {
+
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 117px;
+}
+
+.hover-tab {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.white:hover {
+    background: url("./../img/back.png") no-repeat right 30px bottom;
+    box-shadow: none;
+    .tables1 h1,
+    .tables1 h3 {
+        color: white;
+    }
+}
+
+.white2:hover {
+    background:  url("./../img/back.png") no-repeat right 30px bottom;
+    box-shadow: none;
+    .tables2 h1,
+    .tables2 h3 {
+        color: white;
+    }
+}
+
+.white3:hover {
+    background:  url("./../img/back.png") no-repeat right 30px bottom;
+    box-shadow: none;
+    .tables3 h1,
+    .tables3 h3 {
+        color: white;
+    }
+}
+
+.white4:hover {
+    background: url("./../img/back.png") no-repeat  right bottom;
+    box-shadow: none;
+    .tables4 h1,
+    .tables4 h3 {
+        color: white;
+    }
+}
+
+
+
+.title3 h1 {
+    color: #051114;
+    text-align: center;
+    font-size: 44px;
+    margin-left: 60px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.title3 h2 {
+    color: #051114;
+    margin-left: 60px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.title3 h2 {
+    position: relative;
+}
+
+.first-button {
+    position: absolute;
+    display: inline-block;
+    margin-left: 13px;
+    width: 83px;
+    height: 33px;
+    border-radius: 20px;
+    border: 1px solid #42B4EE;
+    background: #42B4EE;
+    background: rgba(66, 180, 238, 0.20)
+}
+
+
+switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: powderblue;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 23px;
+    border-radius: 20px;
+    margin-left: 6px;
+    left: 4px;
+    bottom: 4px;
+    background: #42B4EE;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 20px;
+}
+
+.yearly {
+
+    margin-left: 111px;
+    color: #051114;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.7;
+
+}
+
+.box-tables2 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 143px;
+
+}
+
+.purchase {
+    margin-bottom: 60px;
+}
+
+.tabs1 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 360px;
+    height: 480px;
+    padding-top: 50px;
+    margin-right: 50px;
+    box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+
+}
+
+.tabs1 h1 {
+    margin-bottom: 20px;
+    color: #051114;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    opacity: 0.7;
+}
+
+.tabs1 h2 {
+    margin-bottom: 40px;
+    color: #051114;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.tabs1 p {
+    margin-bottom: 10px;
+    color: #051114;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.try {
+    margin-top: 45px;
+    display: inline-flex;
+    padding: 15px 30px;
+    color: #42B4EE;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.8px;
+    border: 1px solid #42B4EE1A;
+    background: rgba(66, 180, 238, 0.10);
+
+
+}
+
+.try:hover {
+    color: #fff;
+    background: #42B4EE;
+
+}
+
+.white1:hover {
+    background: url("./../img/back-top.png") no-repeat right 50px top;
+    .tabs1 h1,
+    .tabs1 h2 {
+        color: white;
+        opacity: 100%;
+    }
+}
+
+
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.news {
+    color: #051114;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 60px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+
+}
+
+.sub-team1 {
+    width: 555px;
+    height: 650px;
+    border-radius: 10px;
+    border: 2px solid darkgray;
+    margin-right: 30px;
+
+}
+
+.team1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.team1 h1 {
+    color: #051114;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 390px;
+    opacity: 0.7;
+
+}
+
+.team1 p {
+    margin-top: 390px;
+    color: #051114;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%;
+    opacity: 0.7;
+}
+
+.sub-team1 h3 {
+    margin-left: 30px;
+    margin-top: 76px;
+    color: #051114;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.sub-team1 h4 {
+    margin-left: 30px;
+    width: 427px;
+    color: #051114;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 35px;
+}
+
+.team1 {
+    background: url("./../img/team1.jpg") no-repeat center;
+    width: 553px;
+    height: 353px;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid rgba(81, 86, 94, 0.10);
+
+}
+
+.team2 {
+    background: url("./../img/team2.jpg") no-repeat center;
+    width: 553px;
+    height: 353px;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid rgba(81, 86, 94, 0.10);
+}
+
+.sub-team1 a {
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: 0.7px;
+    border: 1px solid #42B4EE;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #42B4EE;
+}
+
+.sub-team1 a:hover {
+    background-color: rgba(66, 180, 238, 0.8);
+}
+
+.relative {
+    position: relative;
+
+}
+
+.futers {
+    position: absolute;
+    width: 1900px;
+    height: 504px;
+    background: #051114;
+    background-size: contain;
+    margin-left: -382px;
+    overflow: hidden;
+
+}
+
+.sub-futers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+
+}
+
+.futers .logo {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 450px;
+
+
+}
+
+
+.logo h1 {
+    margin-top: 33px;
+    opacity: 0.7;
+    width: 290px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.new {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 345px;
+    margin-bottom: 103px;
+}
+
+.sub-new, .sub-new2 {
+    list-style: none;
+    margin-top: 100px;
+    margin-right: 80px;
+}
+
+.sub-new li, .sub-new2 li {
+
+    padding: 10px;
+}
+
+
+.sub-new .teg a,
+.sub-new2 .teg a {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.7;
+
+}
+
+.resources,
+.links {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.new {
+    position: relative;
+}
+
+.bord {
+    position: absolute;
+    width: 1140px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+    opacity: 0.2;
+    margin-top: 440px;
+    margin-left: 450px;
+}
+
+.text {
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 830px;
+    color: #FFF;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    opacity: 0.7;
+}
