@@ -1,0 +1,68 @@
+body {
+    font-family: Roboto, sans-serif;}
+
+.container {
+    width: 768px;
+    margin: 0 auto;
+}
+
+.topic {
+    font-size: 27px;
+    margin-top:30px ;
+    font-weight: bold;
+}
+a {
+    color: rgb(74,31,165);
+    text-decoration: none;
+}
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.tag{
+    background-color: #cccccc;
+    padding: 5px;
+    margin-top: 30px;
+    width: 53px;
+}
+.line {
+    font-weight: lighter ;
+    font-size: 145px;
+    color: rgb(74,31,165);
+    margin-left: -13px;
+
+}
+
+h3 {
+    margin-top: -130px;
+    margin-left: 10px;
+}
+.temp{
+    font-weight: normal ;
+     font-size:17px ;
+    margin-top:50px;
+}
+p{
+
+    font-size:17px ;
+
+}
+.url{
+    font-weight: bold;
+    font-size:17px;
+    margin-right:20px ;
+}
+.anatomy{
+    margin-top:33px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.typ{
+    margin-top:33px ;
+    font-size: 16px;
+  font-weight: normal;
+
+}
+
+
