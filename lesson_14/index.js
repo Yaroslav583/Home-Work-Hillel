@@ -33,6 +33,11 @@ function edit(uuid) {
 }
 
 function remove(uuid) {
+    removal(uuid)
+    noDelete(uuid)
+}
+
+function removal(uuid) {
     showRemoveModal();
     const listItem = document.getElementById(`item-${uuid}`);
     document.getElementById('confirmDelete').addEventListener('click', function () {
@@ -41,11 +46,13 @@ function remove(uuid) {
         }
         hideRemoveModal();
     });
+}
+
+function  noDelete(uuid) {
     document.getElementById('confirmNo').addEventListener('click', function () {
         hideRemoveModal()
     });
 }
-
 
 function save(data) {
     const uuid = data.uuid ? data.uuid : generateUuid()
