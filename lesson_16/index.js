@@ -7,18 +7,31 @@ const config = {
 
 // SEARCH -------------------------------------------------
 
+function fetchGallery() {
+    const query = document.getElementById('search').value;
+    if (query) {
+        fetchSearch(query);
+        return;
+    }
+    fetchTrending();
+}
+
+
 function fetchTrending() {
-    document.getElementById('box-gallery').innerHTML = ''
-    fetch(`${config.giphy.url}/trending?api_key=${config.giphy.api_key}`)
+    const limit = getLimit();
+    document.getElementById('box-gallery').innerHTML = '';
+    fetch(`${config.giphy.url}/trending?api_key=${config.giphy.api_key}&limit=${limit}`)
         .then((response) => response.json())
         .then((list) => {
             list.data.forEach((item) => {
                 creatHtmlGallery(item)
             })
         })
+
 }
 
-function fetchSearch(query, limit) {
+function fetchSearch(query) {
+    const limit = getLimit();
     document.getElementById('box-gallery').innerHTML = ''
     fetch(`${config.giphy.url}/search?q=${encodeURIComponent(query)}&api_key=${config.giphy.api_key}&limit=${limit}`)
         .then((response) => response.json())
@@ -28,6 +41,7 @@ function fetchSearch(query, limit) {
             })
         })
 }
+
 
 // CREAT HTML--------------------------------------------
 
@@ -47,20 +61,26 @@ function creatHtmlGallery(item) {
 window.addEventListener('load', function (event) {
     fetchTrending();
 });
-document.getElementById('search').addEventListener('blur', function (event) {
 
-    const query = event.target.value
-    fetchSearch(query)
-})
+document.getElementById('search').addEventListener('blur', function (event) {
+    fetchGallery();
+});
+
 document.getElementById('search').addEventListener('keyup', function (event) {
-    // Проверяем, была ли нажата клавиша Enter (код 13)
     if (event.key === 'Enter') {
-        const query = event.target.value;
-        fetchSearch(query);
+        fetchGallery();
     }
 });
+
 document.getElementById('limitSelect').addEventListener('change', function (event) {
-    const query = document.getElementById('search').value;
-    const limit = event.target.value;
-    fetchSearch(query, limit);
+    fetchGallery();
 });
+
+
+// Create Limit -------------------------------------------------
+
+
+function getLimit() {
+    const limit = document.getElementById('limitSelect').value;
+    return limit ? limit : 10;
+}
