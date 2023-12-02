@@ -250,7 +250,7 @@ function createHtmlTodoItem(data) {
     liElement.innerHTML = `
 
     <div class="form-check">
-            <input type="checkbox" id="form-flexCheckDefault" class="form-check-input"  ${data.flexCheckDefault ? 'checked' : ''} value="" id="flexCheckDefault-${data.uuid}">
+            <input type="checkbox" class="form-check-input"  ${data.flexCheckDefault ? 'checked' : ''} value="" id="flexCheckDefault-${data.uuid}">
             <label class="form-check-label" for="flexCheckDefault-${data.uuid}">
                 <div id="title-${data.uuid}">${data.title}</div>
             </label>
